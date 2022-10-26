@@ -151,6 +151,7 @@ ul>li a:hover::before {
 .how-it-works {
     font-family: 'Montserrat', sans-serif;
 }
+
 .c-stepper__item {
     display: flex;
     gap: 1rem;
@@ -196,6 +197,101 @@ ul>li a:hover::before {
     transform: translateX(calc(var(--size) / 2));
     bottom: var(--spacing);
 }
+/* -------------ENDING DOWNLOAD LINKS-------------*/
+/* -------------SLIDESHOW-------------*/
+.feedback{
+    background-color: #000000;
+
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.mySlides{
+    position: relative;
+    left:100px;
+    top: 70px;
+}
+.name{
+    font-size: 12px;
+    margin: 0 auto;
+}
+.comment{
+    font-weight: 500;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/* -------------ENDING SLIDESHOW-------------*/
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /* -------------ENDING DOWNLOAD LINKS-------------*/
 
@@ -216,5 +312,3 @@ ul>li a:hover::before {
         max-width: 560px;
     }
 }
-
-
