@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 *,
@@ -7,34 +7,42 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+
 }
 
+/* -------------HEADER-------------*/
 .container {
     max-width: 1320px;
     margin: 0 auto;
 }
-.header-container{
+
+.header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 55px;
 }
+
 .header {
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo {
     color: white;
 }
 
+.menu {
+    width: 40%;
+}
+
 ul {
-    max-width: 400px;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 ul li {
     display: inline;
+    padding: 10px;
 }
 
 ul>li a {
@@ -45,14 +53,151 @@ ul>li a {
 
 ul>li a::marker {
     list-style-type: none;
-
 }
 
 ul>li a:hover {
     text-decoration: underline;
 }
 
+a {
+    background-image: linear-gradient(to right,
+            #ffffff,
+            #ffffff 50%,
+            #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
 
+/* Animation */
+ul>li a:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+ul>li a:hover {
+    background-position: 0;
+}
+
+ul>li a:hover::before {
+    width: 100%;
+}
+
+/* Ending of Animation */
+
+/* -------------END HEADER-------------*/
+/* -------------MAIN-------------*/
+
+.left-side {
+    width: 35%;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+    padding-top: 50px;
+    font-weight: 500;
+}
+
+.more-info {
+    padding-top: 25px;
+    padding-bottom: 150px;
+}
+
+.more-info-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    font-weight: 700;
+    border: none;
+    padding: 8px 26px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+/* -------------ENDING MAIN-------------*/
+/* -------------DOWNLOAD LINKS-------------*/
+.download {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-items: center;
+}
+
+.app-links img {
+    width: 200px;
+}
+
+.how-it {
+    padding-top: 50px;
+}
+
+.how-it-works {
+    font-family: 'Montserrat', sans-serif;
+}
+.c-stepper__item {
+    display: flex;
+    gap: 1rem;
+}
+
+.c-stepper__item:before {
+    --size: 3rem;
+    content: "";
+    position: relative;
+    z-index: 1;
+    flex: 0 0 var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.c-stepper__item {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.c-stepper__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(1.5rem);
+    width: 2px;
+    background-color: #000000;
+}
+
+.c-stepper {
+    padding-top: 50px;
+    --size: 3rem;
+    --spacing: 0.5rem;
+}
+
+.c-stepper__item:not(:last-child):after {
+    top: calc(var(--size) + var(--spacing));
+    transform: translateX(calc(var(--size) / 2));
+    bottom: var(--spacing);
+}
+
+/* -------------ENDING DOWNLOAD LINKS-------------*/
 
 @media (min-width:992px) and (max-width:1330px) {
     .container {
@@ -60,14 +205,16 @@ ul>li a:hover {
     }
 }
 
-@media (min-width:792px) and (max-width:992px) {
+@media (min-width:768px) and (max-width:992px) {
     .container {
-        max-width: 790px;
+        max-width: 760px;
     }
 }
 
-@media (min-width:576px) and (max-width:792px) {
+@media (min-width:576px) and (max-width:768px) {
     .container {
         max-width: 560px;
     }
 }
+
+
