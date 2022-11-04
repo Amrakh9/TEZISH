@@ -489,6 +489,20 @@ summary:hover {
 .footer{
     background-color: #000000;
     color: #ffffff;
+    display: flex;
+}
+.f-left-side{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+.f-right-side{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+.phone, .e-mail, .location{
+    display: flex;
 }
 /* -------------ENDING FOOTER-------------*/
 /* -------------ENDING DOWNLOAD LINKS-------------*/
