@@ -11,15 +11,18 @@
 </head>
 
 <body>
+    <!-- https://codepen.io/jason-knight/pen/jOzjmgg?editors=1100 -->
     <div class="header">
         <div class="container header-container">
             <div class="logo-section">
                 <h2 class="logo">TEZISH</h2>
-            </div>
-            <div class="menu">
+                <a class="a-logo" href="#menu" hidden></a>
+            </div>  
+            <div class="menu" id="menu">
+                <a href="#" hidden></a>
                 <ul class="main-menu">
                     <li class="menu-list"><a href="forbussines.html">Bizneslər Üçün</a></li>
-                    <li class="menu-list"><a href="main.html">İşçilər Üçün</a> </li>
+                    <li class="menu-list"><a href="index.html">İşçilər Üçün</a> </li>
                     <li class="menu-list"><a href="about.html">Haqqımızda</a></li>
                     <li class="menu-list"><a href="help.html">Kömək</a></li>
                 </ul>
@@ -39,8 +42,10 @@
                         birləşdirir. Biz hərkəsin istədiyi şərtlərlə işləməsinə şərait yaradırıq.</p>
                 </div>
                 <div class="more-info">
-                    <button class="more-info-btn">Daha çox məlumat →</button>
+                    <!-- <button onclick="scrollFunction()" id="myBtn" class="more-info-btn">Daha çox məlumat →</button> -->
+                    <button class="more-info-btn"><a href="#accordion">Daha çox məlumat →</a> </button>
                 </div>
+
             </div>
             <!-- <div class="right-side">
                 <img src="" alt="">
@@ -52,10 +57,10 @@
         <div class="container container-downlaod">
             <h2 class="download-header">Azadlıq və daha çoxu, sadəcə bir tətbiqdə</h2>
             <div class="download-links">
-                <a href="http://bit.ly/Kabinetim" class="app-links">
+                <a href="#" class="app-links">
                     <img src="./assets/app-store-badge-az.png" alt="g-play">
                 </a>
-                <a href="http://bit.ly/Kabinetim" class="app-links">
+                <a href="#" class="app-links">
                     <img src="./assets/google-play-badge-az.png" alt="g-play">
                 </a>
             </div>
@@ -142,7 +147,7 @@
         <br>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -157,7 +162,7 @@
             </div>
             <!-- https://unsplash.com/photos/a0x0H8Wq87Y -->
         </div>
-        <div class="accordion">
+        <div class="accordion" id="accordion">
             <div class="faq container">
                 <h2 class="faq-header">Tez-Tez Soruşulan Suallar</h2>
                 <details class="style4">
@@ -234,30 +239,38 @@
             </div>
             <div class="footer">
                 <div class="container">
-                    <div class="f-left-side">
-                        <h3 class="footer-logo">TEZISH</h3>
-                        <div class="phone">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+994 55 570 54 60</p>
-                        </div>
-                        <div class="e-mail">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>anar@tezish.com</p>
-                        </div>
-                        <div class="location">
-                            <i class="fa-solid fa-location-pin"></i>
-                            <p>Nərimanov Filialı: 61 Koroğlu Rəhimov küçəsi, Unipoint Coworking, Bakı, Azərbaycan</p>
-                            <p>Bayıl Filialı: 29 Neftçi Qurban küçəsi, Bayıl Plaza, Bakı, Azərbaycan</p>
-                        </div>
-                        <div class="mmc">
-                            © 2022 TEZISH MMC
-                        </div>
+                    <div class="footer-flex">
+                        <!-- Containere display flex -->
+                        <div class="f-left-side">
+                            <h3 class="footer-logo">TEZISH</h3>
+                            <div class="phone-and-social">
+                                <div class="phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>+994 55 570 54 60</p>
+                                </div>
+                                <div class="social-links">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                            <div class="e-mail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>anar@tezish.com</p>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-pin"></i>
+                                <div class="location-flex">
+                                    <p>Nərimanov Filialı: 61 Koroğlu Rəhimov küçəsi, Unipoint Coworking, Bakı,
+                                        Azərbaycan</p>
+                                    <p>Bayıl Filialı: 29 Neftçi Qurban küçəsi, Bayıl Plaza, Bakı, Azərbaycan</p>
+                                </div>
+                            </div>
+                        </div>     
                     </div>
-                    <div class="f-right-side">
-                        <div class="social-links">
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
+                    <div class="lisance">
+                        <div>
+                            © 2022 TEZISH MMC
                         </div>
                         <div class="rules-and-privacy">
                             <p class="rules">Xidmət Şərtləri</p>
