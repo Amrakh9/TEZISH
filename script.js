@@ -51,3 +51,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+
+// CONTACT FORM 
+function SendMail(){
+  var params = {
+    from_name : document.getElementById("full_name").value,
+    phone : document.getElementById("phone").value,
+    message : document.getElementById("message").value
+  }
+  emailjs.send("service_129ckqp", "template_3sjjie5", params).then(function(res){
+    alert("Success!" + res.status);
+  })
+}
