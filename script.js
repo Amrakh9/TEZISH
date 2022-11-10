@@ -1,6 +1,4 @@
 // SLIDER JS
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -39,7 +37,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+  acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
@@ -53,14 +51,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
-// SMOOTH SCROLL
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-$("button").click(function() {
-  $('html,body').animate({
-      scrollTop: $(".accordion").offset().top},
-      'slow');
-});
