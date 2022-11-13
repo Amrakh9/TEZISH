@@ -22,10 +22,13 @@ body {
     align-items: center;
     height: 55px;
 }
-.logo-section, .menu{
+
+.logo-section,
+.menu {
     display: flex;
     flex-direction: row;
 }
+
 .header {
     background-color: black;
     font-family: 'Roboto', sans-serif;
@@ -39,31 +42,31 @@ body {
     width: 50%;
 }
 
-ul {
+.menu ul {
     list-style-type: none;
     font-weight: bold;
 }
 
-ul li {
+.menu ul li {
     display: inline;
     padding: 10px;
 }
 
-ul>li a {
+.menu ul>li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
 
-ul>li a::marker {
+.menu ul>li a::marker {
     list-style-type: none;
 }
 
-ul>li a:hover {
+.menu ul>li a:hover {
     text-decoration: underline;
 }
 
-a {
+.menu li a, .more-info-btn a {
     background-image: linear-gradient(to right,
             #ffffff,
             #ffffff 50%,
@@ -79,7 +82,7 @@ a {
 }
 
 /* Animation */
-ul>li a:before {
+.menu ul>li a:before {
     content: '';
     background: #ffffff;
     display: block;
@@ -91,17 +94,19 @@ ul>li a:before {
     transition: all 0.5s ease-in-out;
 }
 
-ul>li a:hover {
+.menu ul>li a:hover {
     background-position: 0;
 }
 
-ul>li a:hover::before {
+.menu ul>li a:hover::before {
     width: 100%;
 }
+
 
 /* Ending of Animation */
 
 /* -------------END HEADER-------------*/
+
 /* -------------MAIN-------------*/
 
 .left-side {
@@ -109,11 +114,13 @@ ul>li a:hover::before {
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .b-left-side {
     width: 70%;
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .description {
     padding-top: 50px;
     font-weight: 500;
@@ -135,14 +142,17 @@ ul>li a:hover::before {
     margin-top: 16px;
     cursor: pointer;
 }
-.header-flex{
+
+.header-flex {
     width: 100%;
     display: flex;
 }
-.right-side{
+
+.right-side {
     text-align: center;
 }
-.right-side img{
+
+.right-side img {
     width: 35%;
     padding: 2%;
 }
@@ -451,7 +461,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+.faq p {
     margin: 0;
     padding-bottom: 10px;
 }
@@ -515,6 +525,7 @@ summary:hover {
 
 .lisance {
     padding-top: 25px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -533,6 +544,14 @@ summary:hover {
     justify-content: space-between;
     width: 23%;
 }
+.rules-and-privacy p a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.rules-and-privacy p a:hover{
+    color: red;
+}
+
 
 .phone-and-social,
 .e-mail,
@@ -543,11 +562,68 @@ summary:hover {
 
 /* -------------ENDING FOOTER-------------*/
 /* -------------ENDING DOWNLOAD LINKS-------------*/
+/* ABOUT PAGE */
+.about-us {
+    padding: 2% 0 2% 0;
+}
 
+.join-us {
+    background-color: #e6e2e2;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    height: 200px;
+}
+.join-us p{
+    padding-top: 2%;
+    font-size: 14px;
+}
+.about-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* ABOUT PAGE */
+/* RULES AND PRIVACY PAGE */
+.r-a-p h1{
+    padding: 3% 0 3% 0;
+}
+.r-a-p h3{
+    padding: 3% 0 3% 0;
+}
+
+.r-a-p ul{
+    width: 80%;
+    margin-left: 2%;
+}
+.r-a-p ul li{
+    padding: 0;
+    font-weight: normal;
+}
+.r-a-p p{
+    width: 80%;
+}
+.r-a-p .headings{
+    padding: 2% 0 2% 0;
+}
+.r-a-p h4{
+    padding: 2% 0 2% 0;
+}
+.last-update{
+    font-size: 12px;
+    font-weight: 500;
+}
+.reminder{
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* RULES AND PRIVACY PAGE */
 @media (min-width:992px) and (max-width:1330px) {
     .container {
         max-width: 980px;
     }
+    
     .rules-and-privacy {
         width: 30%;
     }
@@ -557,36 +633,46 @@ summary:hover {
     .container {
         max-width: 765px;
     }
-    .logo{
+
+    .logo {
         font-size: 20px;
     }
-    ul li a{
+
+    ul li a {
         font-size: 14px;
     }
-    .menu{
-        width: 55%;
+
+    .menu {
+        width: 61%;
     }
-    .more-info-btn{
+
+    .more-info-btn {
         margin-bottom: 10%;
     }
-    .memo{
+
+    .memo {
         font-size: 15px;
     }
-    .download-header{
+
+    .download-header {
         font-size: 20px;
     }
-    .left-side{
+
+    .left-side {
         width: 69%;
     }
-    .right-side img{
+
+    .right-side img {
         padding: 5% 0 0 0;
         width: 39%;
     }
-    .faq{
+
+    .faq {
         width: 69%;
     }
-    .rules-and-privacy{
-        width:35%;
+
+    .rules-and-privacy {
+        width: 35%;
     }
 }
 
@@ -594,10 +680,50 @@ summary:hover {
     .container {
         max-width: 560px;
     }
+
+    .left-side,
+    .b-left-side {
+        width: 100%;
+    }
+
+    .header-flex {
+        display: block;
+    }
+
+    .more-info-btn {
+        margin-bottom: 6%;
+    }
+
+    .right-side img {
+        padding: 0;
+        width: 90%;
+    }
+
+    .download {
+        text-align: center;
+    }
+
+    .download-header {
+        font-size: 30px;
+    }
+
+    .faq {
+        width: 80%;
+    }
+
+    .rules-and-privacy {
+        width: 48%;
+    }
+
     /* HAMBURGER MENU */
     body>.header a[href^="#"] {
         display: block;
         /* undo hidden states */
+    }
+
+    .main-menu {
+        width: 100%;
+        height: 230px;
     }
 
     .logo+.a-logo {
@@ -648,7 +774,7 @@ summary:hover {
         position: relative;
         top: 4em;
         left: -50%;
-        background: #222;
+        background: #000000;
         transition: left 0.3s;
     }
 
@@ -660,5 +786,6 @@ summary:hover {
         display: block;
         text-align: center;
     }
+
     /* ENDING HAMBURGER MENU */
 }

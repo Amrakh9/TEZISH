@@ -52,20 +52,28 @@
                         <div class="c-left-side">
                             <div class="phone">
                                 <i class="fa-solid fa-phone"></i>
-                                <h5>Telefon</h5>
-                                <p>+994 55 570 54 60</p>
+                                <div class="phone-details">
+                                    <h4>Telefon</h4>
+                                    <p>+994 55 570 54 60</p>
+                                </div>
                             </div>
                             <div class="e-mail">
                                 <i class="fa-solid fa-envelope"></i>
-                                <p>anar@tezish.com</p>
+                                <div class="phone-details">
+                                    <h4>Email</h4>
+                                    <p>anar@tezish.com</p></div>
                             </div>
-                            <div class="location">
+                            <div class="e-mail">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <div class="location-flex">
-                                    <p>Nərimanov Filialı: 61 Koroğlu Rəhimov küçəsi, Unipoint Coworking, Bakı,
-                                        Azərbaycan</p>
-                                    <p>Bayıl Filialı: 29 Neftçi Qurban küçəsi, Bayıl Plaza, Bakı, Azərbaycan</p>
-                                </div>
+                                <div class="phone-details">
+                                    <h4>Bayıl Plaza</h4>
+                                    <p>29 Neftçi Qurban, Bayıl Plaza, Bakı</p></div>
+                            </div>
+                            <div class="e-mail">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="phone-details">
+                                    <h4>Unipoint Coworking</h4>
+                                    <p>61 Koroğlu Rəhimov, Unipoint Coworking, Bakı</p></div>
                             </div>
                         </div>
                     </div>
@@ -76,14 +84,14 @@
                         </label>
                         <label for="phone">
                             Telefon *
-                            <input type="tel" id="phone" name="phone" required placeholder="Telefon nomresi qeyd edin">
+                            <input type="text" id="phone" name="phone" required placeholder="Telefon nomresi qeyd edin">
                         </label>
                         <label for="message">
                             Mesaj
-                            <textarea id="message" name="message" placeholder="Mesajinizi burada qeyd edin" rows="4"
+                            <textarea id="message" name="message" type="text" placeholder="Mesajinizi burada qeyd edin" rows="4"
                                 cols="51"></textarea>
                         </label>
-                        <button onclick="SendMail()" class="submit-btn">Muracieti gonder</button>
+                        <button onclick="SendMail()"  class="submit-btn">Müraciəti Göndər</button>
                     </div>
                 </div>
             </div>
@@ -156,8 +164,8 @@
                     © 2022 TEZISH MMC
                 </div>
                 <div class="rules-and-privacy">
-                    <p class="rules">Xidmət Şərtləri</p>
-                    <p class="privacy">Məxfilik Siyasəti</p>
+                    <p class="rules"><a href="rules-and-privacy.html">Xidmət Şərtləri</a> </p>
+                    <p class="privacy"><a href="rules-and-privacy.html">Məxfilik Siyasəti</a></p>
                 </div>
             </div>
         </div>
