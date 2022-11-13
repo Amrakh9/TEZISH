@@ -8,6 +8,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 /* -------------HEADER-------------*/
@@ -583,6 +584,10 @@ summary:hover {
     height: 500px;
     object-fit: cover;
 }
+.about-btn a{
+    display: flex;
+    align-items: center;
+}
 /* ABOUT PAGE */
 /* RULES AND PRIVACY PAGE */
 .r-a-p h1{
@@ -643,7 +648,7 @@ summary:hover {
     }
 
     .menu {
-        width: 61%;
+        width: 62%;
     }
 
     .more-info-btn {

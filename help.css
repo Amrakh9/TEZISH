@@ -110,8 +110,8 @@ input[type=text]:focus, textarea[type=text]:focus {
 .submit-btn:hover {
 
     border-color: black;
-    background-color: white;
-    color: black;
+    background-color: green;
+    color: white;
 
 }
 

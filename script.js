@@ -63,6 +63,6 @@ function SendMail(){
     message : document.getElementById("message").value
   }
   emailjs.send("service_129ckqp", "template_3sjjie5", params).then(function(res){
-    alert("Success!" + res.status);
+    alert("Müraciətinizi qəbul etdik. Ən qısa vaxtda sizinlə əlaqə saxlayacayıq");
   })
 }
