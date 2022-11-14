@@ -794,3 +794,176 @@ summary:hover {
 
     /* ENDING HAMBURGER MENU */
 }
+
+@media (min-width:350px) and (max-width:576px) {
+    .container {
+        max-width: 340px;
+    }
+    .left-side{
+        padding-top: 20px;
+    }
+    .description{
+        padding-top: 10px;
+    }
+    .left-side h1{
+        font-size: 25px;
+    }
+    .left-side,
+    .b-left-side {
+        width: 100%;
+        text-align: left;
+    }
+
+    .header-flex {
+        display: block;
+    }
+    .more-info{
+        padding-top: 10px;
+    }
+    .more-info-btn {
+        margin-bottom: 6%;
+    }
+
+    .right-side img {
+        padding: 0;
+        width: 70%;
+    }
+
+    .download {
+        text-align: center;
+    }
+
+    .download-header {
+        font-size: 25px;
+    }
+    .download-links img {
+        width: 45%;
+        padding-top: 5%;
+    }
+    .how-it-works h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .slideshow-container{
+        height: 238px;
+    }
+    .dots{
+        padding-bottom: 10px;
+    }
+    .main-slide p{
+        font-size: 12px;
+    }
+    .thoughts{
+        padding-bottom: 30px;
+    }
+    .name{
+        padding-bottom: 40px;
+    }
+    .passage-to-bussines{
+        height: 200px;
+        align-items: center;
+    }
+    .business h1{
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .faq {
+        width: 80%;
+    }
+
+    .rules-and-privacy {
+        width: 48%;
+    }
+
+    /* HAMBURGER MENU */
+    body>.header a[href^="#"] {
+        display: block;
+        /* undo hidden states */
+    }
+
+    .main-menu {
+        width: 100%;
+        height: 230px;
+    }
+
+    .logo+.a-logo {
+        display: block;
+        position: absolute;
+        top: 1.25rem;
+        right: 1rem;
+        width: 1.75rem;
+        height: 1.5rem;
+        --gradColor: #FFF;
+        background: linear-gradient(0deg,
+                var(--gradColor) 0% 20%,
+                transparent 20% 40%,
+                var(--gradColor) 40% 60%,
+                transparent 60% 80%,
+                var(--gradColor) 80% 100%);
+    }
+
+    .logo+.a-logo:focus,
+    .logo+.a-logo:hover {
+        --gradColor: #fff;
+    }
+
+    #menu,
+    #menu>a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu {
+        left: -100%;
+        height: 100%;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s, left 0s 0.3s;
+    }
+
+    #menu:target {
+        left: 0;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+
+    #menu ul {
+        position: relative;
+        top: 4em;
+        left: -50%;
+        background: #000000;
+        transition: left 0.3s;
+    }
+
+    #menu:target ul {
+        left: 0;
+    }
+
+    #menu li a {
+        display: block;
+        text-align: center;
+    }
+    .lisance{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+    .rules-and-privacy{
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: row;
+        font-size: 15px;
+        justify-items: center;
+    }
+    /* ENDING HAMBURGER MENU */
+}
