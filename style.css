@@ -53,11 +53,21 @@ body {
     font-weight: bold;
 }
 
-.menu ul li {
+.menu ul .menu-list {
     display: inline;
     padding: 10px;
+    margin-top: 5px;
 }
-
+.menu ul .language {
+    display: inline;
+}
+.language-menu{
+    margin-left: 30px;
+}
+.language img {
+    padding: 0px;
+    width: 20px;
+}
 .menu ul>li a {
     text-decoration: none;
     color: white;
@@ -100,6 +110,17 @@ body {
     height: 2px;
     transition: all 0.5s ease-in-out;
 }
+.menu ul>li a:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+}
 
 .menu ul>li a:hover {
     background-position: 0;
@@ -107,92 +128,6 @@ body {
 
 .menu ul>li a:hover::before {
     width: 100%;
-}
-/* Language */
-.dropdown {
-    max-width: 4em;
-    position: relative;
-    margin: 2em;
-}
-
-.dropdown * {
-    box-sizing: border-box;
-}
-
-.select {
-    background: #2a2f3b;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px #2a2f3b solid;
-    border-radius: 0.5em; 
-    padding: 0.2em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.dropdown img{
-    width: 2em;
-}
-.select-clicked {
-    border: 2px #26489a solid;
-    box-shadow: 0 0 0.8em #26489a;
-}
-
-.select:hover{
-    background: #323741;
-}
-
-.caret {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;  
-    border-right: 5px solid transparent;  
-    border-top: 6px solid #fff;  
-    transition: 0.3s;
-}
-
-.caret-rotate {
-    transform:  rotate(180deg);
-}
-
-.d-menu {
-    list-style: none;
-    padding: 0.2em 0.5em;
-    background: #323741;
-    border: 1px #363a43 solid;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-    border-radius: 0.5em;
-    color: #9fa5b5;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    opacity: 0;
-    display: none;
-    transition: 0.2s;
-    z-index: 1;
-}
-
-.d-menu li{
-    padding: 0.7em 0.5em;
-    margin: 0.3em 0;
-    border-radius: 0.5em;
-    cursor: pointer;
-}
-
-.d-menu li:hover{
-    background: #2a2d35;
-}
-
-.active {
-    background: #23242a;
-}
-
-.menu-open{
-    display: block;
-    opacity: 1 ;
 }
 /* Ending of Animation */
 
@@ -205,9 +140,14 @@ body {
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.memo{
+    font-size: 20px;
+}
+.description{
+    font-size: 18px;
+}
 .b-left-side {
-    width: 70%;
+    width: 100%;
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -228,15 +168,17 @@ body {
     font-weight: 700;
     border: none;
     padding: 8px 26px;
+    font-size: 15px;
     color: #fff;
     border-radius: 20px;
     margin-top: 16px;
     cursor: pointer;
 }
-
 .header-flex {
     width: 100%;
     display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .right-side {
@@ -244,10 +186,14 @@ body {
 }
 
 .right-side img {
-    width: 35%;
+    width: 40%;
     padding: 2%;
 }
 
+.b-right-side img{
+    width: 45%;
+    margin-left: 15%;
+}
 
 
 /* -------------ENDING MAIN-------------*/
@@ -255,15 +201,16 @@ body {
 .download {
     background-color: #000000;
     color: #fff;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 250px;
     justify-items: center;
 }
 
 .app-links img {
-    width: 200px;
+    width: 240px;
 }
 
 .app-links {
@@ -443,6 +390,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: url("assets/johannes-hurtig-z-fpG7D7buk-unsplash.jpg");
     background-color: #cccccc;
+    color: #000000;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -744,7 +692,12 @@ summary:hover {
     .container {
         max-width: 980px;
     }
-
+    .menu{
+        width: 60%;
+    }
+    .left-side{
+        padding-top: 20px;
+    }
     .rules-and-privacy {
         width: 30%;
     }
@@ -764,7 +717,8 @@ summary:hover {
     }
 
     .menu {
-        width: 62%;
+        width: 72%;
+        font-size: 4px;
     }
 
     .more-info-btn {
@@ -774,7 +728,15 @@ summary:hover {
     .memo {
         font-size: 15px;
     }
-
+    .description{
+        font-size: 13px;
+    }
+    .more-info-btn{
+        font-size: 10px;
+    }
+    .download{
+        height: 200px;
+    }
     .download-header {
         font-size: 20px;
     }
@@ -785,13 +747,15 @@ summary:hover {
 
     .right-side img {
         padding: 5% 0 0 0;
-        width: 39%;
+        width: 40%;
     }
 
     .faq {
         width: 69%;
     }
-
+    .passage-to-bussines{
+        height: 200px;
+    }
     .rules-and-privacy {
         width: 35%;
     }
@@ -936,6 +900,7 @@ summary:hover {
 
     .header-flex {
         display: block;
+        padding-top: 40px;
     }
 
     .more-info {
@@ -1064,7 +1029,7 @@ summary:hover {
 
     #menu ul {
         position: relative;
-        top: 4em;
+        top: 3em;
         left: -50%;
         background: #000000;
         transition: left 0.3s;
@@ -1073,10 +1038,23 @@ summary:hover {
     #menu:target ul {
         left: 0;
     }
-
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
     #menu li a {
         display: block;
         text-align: center;
+    }
+    .language-menu{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        justify-content: space-around;
+    }
+    .language-menu li img{
+        width: 50%;
     }
 
     .lisance {
@@ -1133,12 +1111,13 @@ summary:hover {
 
     .header-flex {
         display: block;
+        padding-top: 20px;
     }
 
     .more-info {
         padding-top: 10px;
     }
-
+    
     .more-info-btn {
         margin-bottom: 6%;
     }
@@ -1261,21 +1240,37 @@ summary:hover {
 
     #menu ul {
         position: relative;
-        top: 4em;
+        top: 3em;
         left: -50%;
         background: #000000;
         transition: left 0.3s;
     }
-
+    
     #menu:target ul {
         left: 0;
     }
-
+    /*  */
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    /*  */
     #menu li a {
         display: block;
         text-align: center;
     }
-
+    /*  */
+    .language-menu{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        justify-content: space-around;
+    }
+    .language-menu li img{
+        width: 50%;
+    }
+    /*  */
     .lisance {
         display: flex;
         text-align: center;
@@ -1286,7 +1281,21 @@ summary:hover {
     .footer p {
         font-size: 13px;
     }
-
+    /*  */
+    .about-img{
+        height: 300px;
+    }
+    .about-us{
+        padding: 5% 0 5% 0;
+    }
+    .join-us p{
+        padding-top: 5%;
+        font-weight: 500;
+    }
+    .join-us .more-info-btn{
+        padding: 2px 17px;
+    }
+    /*  */
     .rules-and-privacy {
         display: flex;
         width: 100%;
