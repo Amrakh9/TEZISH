@@ -192,7 +192,7 @@ body {
 
 .b-right-side img{
     width: 45%;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 
@@ -424,7 +424,7 @@ details summary::-webkit-details-marker {
     background-color: white;
     color: #000000;
     margin: 0 auto;
-    width: 50%;
+    width: 38%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -701,6 +701,15 @@ summary:hover {
     .rules-and-privacy {
         width: 30%;
     }
+    .b-left-side{
+        width: 138%;
+    }
+    .b-right-side img{
+        width: 61%;
+    }
+    .faq{
+        width: 59%;
+    }
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -759,6 +768,16 @@ summary:hover {
     .rules-and-privacy {
         width: 35%;
     }
+    .b-left-side{
+        width: 178%;
+        padding-top: 25px;
+    }
+    .b-left-side .memo{
+        font-size: 15px;
+    }
+    .b-right-side img{
+        width: 61%;
+    }
 }
 
 @media (min-width:576px) and (max-width:768px) {
@@ -770,7 +789,16 @@ summary:hover {
     .b-left-side {
         width: 100%;
     }
-
+    .b-left-side{
+        padding-top: 10px;
+    }
+    .b-left-side .memo{
+        font-size: 17px;
+    }
+    .b-right-side img{
+        width: 75%;
+        margin-left: 13%;
+    } 
     .header-flex {
         display: block;
     }
@@ -857,7 +885,7 @@ summary:hover {
 
     #menu ul {
         position: relative;
-        top: 4em;
+        top: 3em;
         left: -50%;
         background: #000000;
         transition: left 0.3s;
@@ -866,10 +894,24 @@ summary:hover {
     #menu:target ul {
         left: 0;
     }
-
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
     #menu li a {
         display: block;
         text-align: center;
+    }
+    .language-menu{
+        margin: 0;
+        top: 44px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        justify-content: space-around;
+    }
+    .language-menu li img{
+        width: 50%;
     }
 
     /* ENDING HAMBURGER MENU */
@@ -889,7 +931,7 @@ summary:hover {
     }
 
     .left-side h1 {
-        font-size: 25px;
+        font-size: 32px;
     }
 
     .left-side,
@@ -897,7 +939,16 @@ summary:hover {
         width: 100%;
         text-align: left;
     }
-
+    .b-left-side{
+        padding-top: 10px;
+    }
+    .b-left-side .memo{
+        font-size: 14px;
+    }
+    .b-right-side img{
+        width: 75%;
+        margin-left: 13%;
+    } 
     .header-flex {
         display: block;
         padding-top: 40px;
@@ -930,7 +981,7 @@ summary:hover {
     }
 
     .how-it-works h2 {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
     }
 
@@ -1048,6 +1099,7 @@ summary:hover {
     }
     .language-menu{
         margin: 0;
+        top: 44px;
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
@@ -1108,7 +1160,19 @@ summary:hover {
         width: 100%;
         text-align: left;
     }
-
+    .b-left-side{
+        padding-top: 10px;
+    }
+    .b-left-side .memo{
+        font-size: 10px;
+    }
+    .b-left-side p{
+        font-size: 15px;
+    }
+    .b-right-side img{
+        width: 95%;
+        margin-left: 4%;
+    } 
     .header-flex {
         display: block;
         padding-top: 20px;

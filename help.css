@@ -129,3 +129,34 @@ input[type=text]:focus, textarea[type=text]:focus {
         padding-top: 30px;
     }
 }
+@media (min-width:450px) and (max-width:576px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-us{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid black;
+    }
+    .information{
+        padding-top: 30px;
+    }
+}
+@media (min-width:350px) and (max-width:450px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-us{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid black;
+    }
+    .information{
+        padding-top: 30px;
+    }
+    .header-section h1{
+        font-size: xx-large;
+    }
+}
