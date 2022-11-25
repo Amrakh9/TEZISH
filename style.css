@@ -58,16 +58,20 @@ body {
     padding: 10px;
     margin-top: 5px;
 }
+
 .menu ul .language {
     display: inline;
 }
-.language-menu{
+
+.language-menu {
     margin-left: 30px;
 }
+
 .language img {
     padding: 0px;
     width: 20px;
 }
+
 .menu ul>li a {
     text-decoration: none;
     color: white;
@@ -110,6 +114,7 @@ body {
     height: 2px;
     transition: all 0.5s ease-in-out;
 }
+
 .menu ul>li a:before {
     content: '';
     background: #ffffff;
@@ -129,6 +134,7 @@ body {
 .menu ul>li a:hover::before {
     width: 100%;
 }
+
 /* Ending of Animation */
 
 /* -------------END HEADER-------------*/
@@ -140,12 +146,15 @@ body {
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
-.memo{
+
+.memo {
     font-size: 20px;
 }
-.description{
+
+.description {
     font-size: 18px;
 }
+
 .b-left-side {
     width: 100%;
     padding-top: 50px;
@@ -174,6 +183,7 @@ body {
     margin-top: 16px;
     cursor: pointer;
 }
+
 .header-flex {
     width: 100%;
     display: flex;
@@ -190,7 +200,7 @@ body {
     padding: 2%;
 }
 
-.b-right-side img{
+.b-right-side img {
     width: 45%;
     margin-left: 25%;
 }
@@ -593,6 +603,10 @@ summary:hover {
     width: 23%;
 }
 
+.ru .rules-and-privacy {
+    width: 38%;
+}
+
 .rules-and-privacy p a {
     color: #ffffff;
     text-decoration: none;
@@ -692,29 +706,43 @@ summary:hover {
     .container {
         max-width: 980px;
     }
-    .menu{
+
+    .menu {
         width: 60%;
     }
-    .left-side{
+
+    .left-side {
         padding-top: 20px;
     }
+
     .rules-and-privacy {
         width: 30%;
     }
-    .b-left-side{
+
+    .b-left-side {
         width: 138%;
     }
-    .b-right-side img{
+
+    .b-right-side img {
         width: 61%;
     }
-    .faq{
+
+    .faq {
         width: 59%;
+    }
+
+    .ru .rules-and-privacy {
+        width: 55%;
     }
 }
 
 @media (min-width:768px) and (max-width:992px) {
     .container {
         max-width: 765px;
+    }
+
+    .ru .rules-and-privacy {
+        width: 65%;
     }
 
     .logo {
@@ -737,15 +765,19 @@ summary:hover {
     .memo {
         font-size: 15px;
     }
-    .description{
+
+    .description {
         font-size: 13px;
     }
-    .more-info-btn{
+
+    .more-info-btn {
         font-size: 10px;
     }
-    .download{
+
+    .download {
         height: 200px;
     }
+
     .download-header {
         font-size: 20px;
     }
@@ -762,20 +794,25 @@ summary:hover {
     .faq {
         width: 69%;
     }
-    .passage-to-bussines{
+
+    .passage-to-bussines {
         height: 200px;
     }
+
     .rules-and-privacy {
         width: 35%;
     }
-    .b-left-side{
+
+    .b-left-side {
         width: 178%;
         padding-top: 25px;
     }
-    .b-left-side .memo{
+
+    .b-left-side .memo {
         font-size: 15px;
     }
-    .b-right-side img{
+
+    .b-right-side img {
         width: 61%;
     }
 }
@@ -785,20 +822,40 @@ summary:hover {
         max-width: 560px;
     }
 
+    .ruu .lisance {
+        display: block;
+        text-align: center;
+    }
+
+    .ru .rules-and-privacy {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: row;
+        font-size: 12px;
+        justify-items: center;
+    }
+
     .left-side,
     .b-left-side {
         width: 100%;
     }
-    .b-left-side{
+
+    .b-left-side {
         padding-top: 10px;
     }
-    .b-left-side .memo{
+
+    .b-left-side .memo {
         font-size: 17px;
     }
-    .b-right-side img{
+
+    .b-right-side img {
         width: 75%;
         margin-left: 13%;
-    } 
+    }
+
     .header-flex {
         display: block;
     }
@@ -894,15 +951,18 @@ summary:hover {
     #menu:target ul {
         left: 0;
     }
-    .menu{
+
+    .menu {
         display: flex;
         flex-direction: column;
     }
+
     #menu li a {
         display: block;
         text-align: center;
     }
-    .language-menu{
+
+    .language-menu {
         margin: 0;
         top: 44px;
         display: flex;
@@ -910,7 +970,8 @@ summary:hover {
         padding-bottom: 10px;
         justify-content: space-around;
     }
-    .language-menu li img{
+
+    .language-menu li img {
         width: 50%;
     }
 
@@ -939,16 +1000,20 @@ summary:hover {
         width: 100%;
         text-align: left;
     }
-    .b-left-side{
+
+    .b-left-side {
         padding-top: 10px;
     }
-    .b-left-side .memo{
+
+    .b-left-side .memo {
         font-size: 14px;
     }
-    .b-right-side img{
+
+    .b-right-side img {
         width: 75%;
         margin-left: 13%;
-    } 
+    }
+
     .header-flex {
         display: block;
         padding-top: 40px;
@@ -1089,15 +1154,18 @@ summary:hover {
     #menu:target ul {
         left: 0;
     }
-    .menu{
+
+    .menu {
         display: flex;
         flex-direction: column;
     }
+
     #menu li a {
         display: block;
         text-align: center;
     }
-    .language-menu{
+
+    .language-menu {
         margin: 0;
         top: 44px;
         display: flex;
@@ -1105,7 +1173,8 @@ summary:hover {
         padding-bottom: 10px;
         justify-content: space-around;
     }
-    .language-menu li img{
+
+    .language-menu li img {
         width: 50%;
     }
 
@@ -1120,14 +1189,19 @@ summary:hover {
         font-size: 13px;
     }
 
-    .rules-and-privacy {
+    .ruu .lisance {
+        display: block;
+        text-align: center;
+    }
+
+    .ru .rules-and-privacy {
         display: flex;
         width: 100%;
         padding-top: 10px;
         justify-content: space-around;
         text-align: center;
         flex-direction: row;
-        font-size: 15px;
+        font-size: 12px;
         justify-items: center;
     }
 
@@ -1160,19 +1234,24 @@ summary:hover {
         width: 100%;
         text-align: left;
     }
-    .b-left-side{
+
+    .b-left-side {
         padding-top: 10px;
     }
-    .b-left-side .memo{
+
+    .b-left-side .memo {
         font-size: 10px;
     }
-    .b-left-side p{
+
+    .b-left-side p {
         font-size: 15px;
     }
-    .b-right-side img{
+
+    .b-right-side img {
         width: 95%;
         margin-left: 4%;
-    } 
+    }
+
     .header-flex {
         display: block;
         padding-top: 20px;
@@ -1181,7 +1260,7 @@ summary:hover {
     .more-info {
         padding-top: 10px;
     }
-    
+
     .more-info-btn {
         margin-bottom: 6%;
     }
@@ -1243,8 +1322,20 @@ summary:hover {
         width: 80%;
     }
 
-    .rules-and-privacy {
-        width: 48%;
+    .ruu .lisance {
+        display: block;
+        text-align: center;
+    }
+
+    .ru .rules-and-privacy {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: row;
+        font-size: 12px;
+        justify-items: center;
     }
 
     /* HAMBURGER MENU */
@@ -1309,31 +1400,36 @@ summary:hover {
         background: #000000;
         transition: left 0.3s;
     }
-    
+
     #menu:target ul {
         left: 0;
     }
+
     /*  */
-    .menu{
+    .menu {
         display: flex;
         flex-direction: column;
     }
+
     /*  */
     #menu li a {
         display: block;
         text-align: center;
     }
+
     /*  */
-    .language-menu{
+    .language-menu {
         margin: 0;
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
         justify-content: space-around;
     }
-    .language-menu li img{
+
+    .language-menu li img {
         width: 50%;
     }
+
     /*  */
     .lisance {
         display: flex;
@@ -1345,20 +1441,25 @@ summary:hover {
     .footer p {
         font-size: 13px;
     }
+
     /*  */
-    .about-img{
+    .about-img {
         height: 300px;
     }
-    .about-us{
+
+    .about-us {
         padding: 5% 0 5% 0;
     }
-    .join-us p{
+
+    .join-us p {
         padding-top: 5%;
         font-weight: 500;
     }
-    .join-us .more-info-btn{
+
+    .join-us .more-info-btn {
         padding: 2px 17px;
     }
+
     /*  */
     .rules-and-privacy {
         display: flex;
