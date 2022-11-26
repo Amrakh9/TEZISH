@@ -1193,7 +1193,14 @@ summary:hover {
         display: block;
         text-align: center;
     }
-
+    .rules-and-privacy {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 17px;
+    }
     .ru .rules-and-privacy {
         display: flex;
         width: 100%;
@@ -1212,7 +1219,12 @@ summary:hover {
     .container {
         max-width: 340px;
     }
-
+    .r-a-p p {
+        width: 90%;
+    }
+    .r-a-p h1 {
+        font-size: 26px;
+    }
     .left-side {
         padding-top: 20px;
     }
