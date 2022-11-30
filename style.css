@@ -160,7 +160,10 @@ body {
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.download-links{
+    text-align: center;
+    padding-top: 15px;
+}
 .description {
     padding-top: 50px;
     font-weight: 500;
@@ -187,8 +190,8 @@ body {
 .header-flex {
     width: 100%;
     display: flex;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 14px;
 }
 
 .right-side {
